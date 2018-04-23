@@ -198,7 +198,7 @@ public class GameView extends JPanel implements BoardView{
             
             b.putClientProperty("position", new Point(i, j));
             //b.addMouseListener(new pieceML());
-            b.addActionListener(new towerButtonAL());
+            b.addActionListener(new TowerButtonAL());
             
             towers[i][j] = b;
             board.add(towers[i][j]);
@@ -326,7 +326,7 @@ public class GameView extends JPanel implements BoardView{
          PieceSelectMenuPanel blackPieceSelectMenuPanel = new PieceSelectMenuPanel(0);
          blackPieceSelectButtons = blackPieceSelectMenuPanel.getPieceSelectButtons();
          for(int i = 0; i < blackPieceSelectButtons.length; i++) {
-            blackPieceSelectButtons[i].addActionListener(new pieceSelectButtonAL());
+            blackPieceSelectButtons[i].addActionListener(new PieceSelectButtonAL());
          }
          blackTurnSidePanel.addComponent(blackPieceSelectMenuPanel);
          
@@ -357,7 +357,7 @@ public class GameView extends JPanel implements BoardView{
          PieceSelectMenuPanel whitePieceSelectMenuPanel = new PieceSelectMenuPanel(1);
          whitePieceSelectButtons = whitePieceSelectMenuPanel.getPieceSelectButtons();
          for(int i = 0; i < whitePieceSelectButtons.length; i++) {
-            whitePieceSelectButtons[i].addActionListener(new pieceSelectButtonAL());
+            whitePieceSelectButtons[i].addActionListener(new PieceSelectButtonAL());
          }
          whiteTurnSidePanel.addComponent(whitePieceSelectMenuPanel);
          
@@ -390,9 +390,9 @@ public class GameView extends JPanel implements BoardView{
       attackMenuStackButton = new MenuButton(MenuButton.STACK);
       attackMenuCancelButton = new MenuButton(MenuButton.CANCEL);
       
-      attackMenuCaptureButton.addActionListener(new captureButtonAL());
-      attackMenuStackButton.addActionListener(new moveButtonAL());
-      attackMenuCancelButton.addActionListener(new cancelButtonAL());
+      attackMenuCaptureButton.addActionListener(new CaptureButtonAL());
+      attackMenuStackButton.addActionListener(new MoveButtonAL());
+      attackMenuCancelButton.addActionListener(new CancelButtonAL());
       
       attackMenuPanel.addButton(attackMenuCaptureButton);
       attackMenuPanel.addButton(attackMenuCancelButton);
@@ -409,8 +409,8 @@ public class GameView extends JPanel implements BoardView{
       dropMenuDropButton = new MenuButton(MenuButton.DROP);
       dropMenuCancelButton = new MenuButton(MenuButton.CANCEL);
       
-      dropMenuDropButton.addActionListener(new dropButtonAL());
-      dropMenuCancelButton.addActionListener(new cancelButtonAL());
+      dropMenuDropButton.addActionListener(new DropButtonAL());
+      dropMenuCancelButton.addActionListener(new CancelButtonAL());
       
       dropMenuPanel.addButton(dropMenuDropButton);
       dropMenuPanel.addButton(dropMenuCancelButton);
@@ -426,8 +426,8 @@ public class GameView extends JPanel implements BoardView{
       moveMenuMoveButton = new MenuButton(MenuButton.MOVE);
       moveMenuCancelButton = new MenuButton(MenuButton.CANCEL);
       
-      moveMenuMoveButton.addActionListener(new moveButtonAL());
-      moveMenuCancelButton.addActionListener(new cancelButtonAL());
+      moveMenuMoveButton.addActionListener(new MoveButtonAL());
+      moveMenuCancelButton.addActionListener(new CancelButtonAL());
       
       moveMenuPanel.addButton(moveMenuMoveButton);
       moveMenuPanel.addButton(moveMenuCancelButton);
@@ -443,8 +443,8 @@ public class GameView extends JPanel implements BoardView{
       stackMenuStackButton = new MenuButton(MenuButton.STACK);
       stackMenuCancelButton = new MenuButton(MenuButton.CANCEL);
       
-      stackMenuStackButton.addActionListener(new moveButtonAL());
-      stackMenuCancelButton.addActionListener(new cancelButtonAL());
+      stackMenuStackButton.addActionListener(new MoveButtonAL());
+      stackMenuCancelButton.addActionListener(new CancelButtonAL());
       
       stackMenuPanel.addButton(stackMenuStackButton);
       stackMenuPanel.addButton(stackMenuCancelButton);
@@ -741,7 +741,7 @@ public class GameView extends JPanel implements BoardView{
    }
    
    /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ Action Listener Classes /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
-   private class cancelButtonAL implements ActionListener {
+   private class CancelButtonAL implements ActionListener {
       @Override
       public void actionPerformed(ActionEvent e) {
          if(firstPlacementState) {
@@ -784,7 +784,7 @@ public class GameView extends JPanel implements BoardView{
       }
    }
    
-   private class captureButtonAL implements ActionListener {
+   private class CaptureButtonAL implements ActionListener {
       @Override
       public void actionPerformed(ActionEvent e) {
          Point p1 = movingPieceSelectedState;
@@ -804,7 +804,7 @@ public class GameView extends JPanel implements BoardView{
       }
    }
    
-   private class dropButtonAL implements ActionListener {
+   private class DropButtonAL implements ActionListener {
       @Override
       public void actionPerformed(ActionEvent e) {
          Point p = droppingPiecePositionState;
@@ -826,7 +826,7 @@ public class GameView extends JPanel implements BoardView{
       }
    }
    
-   private class moveButtonAL implements ActionListener {
+   private class MoveButtonAL implements ActionListener {
       @Override
       public void actionPerformed(ActionEvent e) {
          Point p1 = movingPieceSelectedState;
@@ -847,7 +847,7 @@ public class GameView extends JPanel implements BoardView{
       }
    }
    
-   private class pieceSelectButtonAL implements ActionListener {
+   private class PieceSelectButtonAL implements ActionListener {
       @Override
       public void actionPerformed(ActionEvent e) {
          if(!(blackPlacementPhaseState || whitePlacementPhaseState)) {
@@ -877,7 +877,7 @@ public class GameView extends JPanel implements BoardView{
       }
    }
    
-   private class towerButtonAL implements ActionListener {
+   private class TowerButtonAL implements ActionListener {
       @Override
       public void actionPerformed(ActionEvent e) {
          if(!(blackPlacementPhaseState || whitePlacementPhaseState)) {
@@ -965,6 +965,17 @@ public class GameView extends JPanel implements BoardView{
       }
    }
    
+   /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ Mouse Listener Classes /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ */
+   /* TO BE IMPLEMENTED
+   private class RightClickCancel extends MouseAdapter {
+      @Override
+      public void mouseClicked(MouseEvent e) {
+         if(SwingUtilities.isRightMouseButton(e)) {
+            moveMenuCancelButton.doClick();
+         }
+      }
+   }
+   */
    /* /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\ Displaying GUI /\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\/\  */
    public void createAndShowGUI() {
       frame = new JFrame("GUNGI");
