@@ -9,7 +9,7 @@ Gungi is a fictional, two-player strategy board game that is played by the citiz
 
 ## INSTALLATION
 
-Using a command-line navigate to the project directory and type the following lines to compile and run the project.
+Use a command-line to navigate to the project directory and type the following lines to compile and run the project:
 
     javac -d bin src/tram/model/*.java src/tram/controller/*.java src/tram/view/*.java src/tram/*.java
     java -cp bin tram.Main
