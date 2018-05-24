@@ -3,11 +3,13 @@
 # TABLE OF CONTENTS
 - [PLACEMENT PHASE](#placement-phase)
 - [PLAYER OPTIONS](#player-options)
-  - [MOVING](#moving)
-  - [CAPTURING](#capturing)
-  - [STACKING](#stacking)
-  - [DROPPING]
+  - [Moving](#moving)
+  - [Capturing](#capturing)
+  - [Stacking](#stacking)
+  - [Dropping](#dropping)
 - [PIECES](#pieces)
+  - [Marshal](#marshal)
+  - [General](#general)
 - [ADDITIONAL RULES](#additional-rules)
 
 # PLACEMENT PHASE
