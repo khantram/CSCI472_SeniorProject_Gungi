@@ -36,46 +36,46 @@
 ## Dropping
 
 # PIECES
-
-![](res/ruleset/piece_marshal.png) ## Marshal
+## Marshal
+![](res/ruleset/piece_marshal.png)
 
 ![](res/ruleset/marshal.png)
 
-### General
+## General
 ![](res/ruleset/piece_general.png) 
 
 ![](res/ruleset/general_t1.png) ![](res/ruleset/general_t2.png) ![](res/ruleset/general_t3.png)
 
-### Lieutenant General
+## Lieutenant General
 ![](res/ruleset/piece_lt_gen.png)
 
-### Major General
+## Major General
 ![](res/ruleset/piece_maj_gen.png)
 
-### Counsel
+## Counsel
 ![](res/ruleset/piece_counsel.png)
 
-### Samurai
+## Samurai
 ![](res/ruleset/piece_samurai.png)
 
-### Knight
+## Knight
 ![](res/ruleset/piece_knight.png)
 
-### Cannon
+## Cannon
 ![](res/ruleset/piece_cannon.png)
 
-### Musketeer
+## Musketeer
 ![](res/ruleset/piece_musketeer.png)
 
-### Archer
+## Archer
 ![](res/ruleset/piece_archer.png)
 
-### Fortress
+## Fortress
 ![](res/ruleset/piece_fortress.png)
 
-### Spy
+## Spy
 ![](res/ruleset/piece_spy.png)
 
-### Pawn
+## Pawn
 ![](res/ruleset/piece_pawn.png)
 
