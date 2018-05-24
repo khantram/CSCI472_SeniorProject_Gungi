@@ -1,0 +1,2 @@
+Manifest-Version: 0.9
+Main-Class: Main
