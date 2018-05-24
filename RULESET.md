@@ -10,24 +10,36 @@
 - [PIECES](#pieces)
   - [Marshal](#marshal)
   - [General](#general)
+  - [Lieutenant General](#lieutenant-general)
+  - [Major General](#major-general)
+  - [Counsel](#counsel)
+  - [Samurai](#samurai)
+  - [Knight](#knight)
+  - [Cannon](#cannon)
+  - [Musketeer](#musketeer)
+  - [Archer](#archer)
+  - [Fortress](#fortress)
+  - [Spy](#spy)
+  - [Pawn](#pawn)
 - [ADDITIONAL RULES](#additional-rules)
 
 # PLACEMENT PHASE
 
 # PLAYER OPTIONS
 
-## MOVING
+## Moving
 
-## CAPTURING
+## Capturing
 
-## STACKING
+## Stacking
 
-## DROPPING
+## Dropping
 
 # PIECES
 
 ### Marshal
-![](res/ruleset/piece_marshal.png) 
+![](res/ruleset/piece_marshal.png) ![](res/ruleset/piece_marshal.png)
+
 
 ### General
 ![](res/ruleset/piece_general.png) 
