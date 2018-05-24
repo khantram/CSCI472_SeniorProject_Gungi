@@ -9,18 +9,18 @@
   - [Dropping](#dropping)
 - [PIECES](#pieces)
   - [Marshal](#marshal-x1)
-  - [General](#general)
-  - [Lieutenant General](#lieutenant-general)
-  - [Major General](#major-general)
-  - [Counsel](#counsel)
-  - [Samurai](#samurai)
-  - [Knight](#knight)
-  - [Cannon](#cannon)
-  - [Musketeer](#musketeer)
-  - [Archer](#archer)
-  - [Fortress](#fortress)
-  - [Spy](#spy)
-  - [Pawn](#pawn)
+  - [General](#general-x2)
+  - [Lieutenant General](#lieutenant-general-x2)
+  - [Major General](#major-general-x2)
+  - [Counsel](#counsel-x2)
+  - [Samurai](#samurai-x2)
+  - [Knight](#knight-x2)
+  - [Cannon](#cannon-x2)
+  - [Musketeer](#musketeer-x2)
+  - [Archer](#archer-x2)
+  - [Fortress](#fortress-x2)
+  - [Spy](#spy-x2)
+  - [Pawn](#pawn-x9)
 - [ADDITIONAL RULES](#additional-rules)
 
 # PLACEMENT PHASE
@@ -46,36 +46,36 @@
 
 ![](res/ruleset/general_t1.png) ![](res/ruleset/general_t2.png) ![](res/ruleset/general_t3.png)
 
-## Lieutenant General
+## Lieutenant General (x2)
 ![](res/ruleset/piece_lt_gen.png)
 
-## Major General
+## Major General (x2)
 ![](res/ruleset/piece_maj_gen.png)
 
-## Counsel
+## Counsel (x2)
 ![](res/ruleset/piece_counsel.png)
 
-## Samurai
+## Samurai (x2)
 ![](res/ruleset/piece_samurai.png)
 
-## Knight
+## Knight (x2)
 ![](res/ruleset/piece_knight.png)
 
-## Cannon
+## Cannon (x2)
 ![](res/ruleset/piece_cannon.png)
 
-## Musketeer
+## Musketeer (x2)
 ![](res/ruleset/piece_musketeer.png)
 
-## Archer
+## Archer (x2)
 ![](res/ruleset/piece_archer.png)
 
-## Fortress
+## Fortress (x2)
 ![](res/ruleset/piece_fortress.png)
 
-## Spy
+## Spy (x2)
 ![](res/ruleset/piece_spy.png)
 
-## Pawn
+## Pawn (x9)
 ![](res/ruleset/piece_pawn.png)
 
