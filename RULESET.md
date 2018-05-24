@@ -37,8 +37,8 @@
 
 # PIECES
 
-### Marshal
 ![](res/ruleset/piece_marshal.png)
+## Marshal
 
 ![](res/ruleset/marshal.png)
 
