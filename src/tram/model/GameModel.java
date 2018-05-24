@@ -7,7 +7,7 @@ import tram.model.Piece;
 import tram.model.Tower;
 
 public class GameModel {
-   private final int MAX_PIECES_PLACEABLE = 2;
+   private final int MAX_PIECES_PLACEABLE = 25;
    private Board board;
    private Player black;
    private Player white;
