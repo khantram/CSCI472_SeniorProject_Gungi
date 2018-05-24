@@ -21,3 +21,5 @@ Use a command-line to navigate to the project directory and type the following l
 ## RULESET
 
 See [RULESET.md](RULESET.md)
+
+## SCREENSHOTS
