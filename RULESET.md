@@ -8,7 +8,7 @@
   - [Stacking](#stacking)
   - [Dropping](#dropping)
 - [PIECES](#pieces)
-  - [Marshal](#marshal)
+  - [Marshal](#marshal-(x1))
   - [General](#general)
   - [Lieutenant General](#lieutenant-general)
   - [Major General](#major-general)
