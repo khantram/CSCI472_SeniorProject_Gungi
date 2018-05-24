@@ -168,7 +168,7 @@ public class Board {
       for(Movement movement : movements) {
          int destination = index + movement.offset;
          
-         if(isInBounds(destination) && isObstructedMove(piece, movement.offset, destination, capture)) { 
+         if(isInBounds(destination) && isUnobstructedMove(piece, movement.offset, destination, capture)) { 
             possibleMoves.add(destination);
          }
          
@@ -176,7 +176,7 @@ public class Board {
             destination += movement.offset;
             
             while(isInBounds(destination)) {
-               if(isObstructedMove(piece, movement.offset, destination, capture)) {
+               if(isUnobstructedMove(piece, movement.offset, destination, capture)) {
                   possibleMoves.add(destination);
                   break;
                }
@@ -188,14 +188,14 @@ public class Board {
             
             if(capture) {
                while(isInBounds(destination)) {
-                  if(isObstructedMove(piece, movement.offset, destination, capture)) {
+                  if(isUnobstructedMove(piece, movement.offset, destination, capture)) {
                      possibleMoves.add(destination);
                   }
                   destination += movement.offset;
                }
             }
             else {
-               while(isInBounds(destination) && isObstructedMove(piece, movement.offset, destination, capture)) {
+               while(isInBounds(destination) && isUnobstructedMove(piece, movement.offset, destination, capture)) {
                   possibleMoves.add(destination);
                   destination += movement.offset;
                }
@@ -214,12 +214,7 @@ public class Board {
       return (!possibleMoves.isEmpty()) || (!possibleCaptures.isEmpty());
    }
    
-   /**
-    * This method should check for obstructing pieces (?)
-    * -> Check for "pseudo-legal" moves first, then for pinned pieces (?)
-         -> Or, maybe vice-versa
-    */
-   public boolean isObstructedMove(Piece piece, int offset, int destination, boolean capture) {      
+   public boolean isUnobstructedMove(Piece piece, int offset, int destination, boolean capture) {      
       if(piece.getName() == Piece.CANNON && capture) { //!!! Probably not optimal...
          boolean screen = false;
          for(int i = piece.getIndex()+offset; i != destination; i+=offset) {
