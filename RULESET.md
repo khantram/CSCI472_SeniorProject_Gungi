@@ -1,6 +1,26 @@
 # OVERVIEW
 
 # TABLE OF CONTENTS
+- [PLACEMENT PHASE](#placement-phase)
+- [PLAYER OPTIONS](#player-options)
+  - [MOVING](#moving)
+  - [CAPTURING](#capturing)
+  - [STACKING](#stacking)
+  - [DROPPING]
+- [PIECES](#pieces)
+- [ADDITIONAL RULES](#additional-rules)
+
+# PLACEMENT PHASE
+
+# PLAYER OPTIONS
+
+## MOVING
+
+## CAPTURING
+
+## STACKING
+
+## DROPPING
 
 # PIECES
 
