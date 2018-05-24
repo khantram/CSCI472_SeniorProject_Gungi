@@ -38,11 +38,14 @@
 # PIECES
 
 ### Marshal
-![](res/ruleset/piece_marshal.png) ![](res/ruleset/piece_marshal.png)
+![](res/ruleset/piece_marshal.png)
 
+![](res/ruleset/marshal.png)
 
 ### General
 ![](res/ruleset/piece_general.png) 
+
+![](res/ruleset/general_t1.png) ![](res/ruleset/general_t2.png) ![](res/ruleset/general_t3.png)
 
 ### Lieutenant General
 ![](res/ruleset/piece_lt_gen.png)
