@@ -2,12 +2,12 @@
 
 Gungi is a fictional, two-player strategy board game that is played by the citizens of East Gorteau and other major characters in [Hunter x Hunter](https://en.wikipedia.org/wiki/Hunter_%C3%97_Hunter)—a Japanese comic and animated series written by Yoshihiro Togashi. This project is a Windows application of the fictional board game written in Java.
 
-- [INSTALLATION](#installation)
+- [USAGE](#usage)
 - [DESCRIPTION](#description)
 - [RULESET](#ruleset)
 - [SCREENSHOTS](#screenshots)
 
-## INSTALLATION
+## USAGE
 
 Use a command-line to navigate to the project directory and type the following lines to compile and run the project:
 
