@@ -6,7 +6,6 @@ Gungi is a fictional, two-player strategy board game that is played by the citiz
 - [USAGE](#usage)
 - [DESCRIPTION](#description)
 - [RULESET](#ruleset)
-- [SCREENSHOTS](#screenshots)
 
 ## USAGE
 
@@ -23,4 +22,3 @@ Use a command-line to navigate to the project directory and type the following l
 
 See [RULESET.md](RULESET.md)
 
-## SCREENSHOTS
